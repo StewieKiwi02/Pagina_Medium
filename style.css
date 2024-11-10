@@ -1,0 +1,467 @@
+body{
+    margin:0;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    height: 10%;
+}
+
+.logo_medium{
+    width: 20%;
+}
+
+.logo_medium img{
+    width: 100%;
+}
+
+.button_conteiner{
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.header_button{
+    margin:0;
+    border:0;
+    padding: 0;
+    height: 50%;
+    background-color: transparent;
+    cursor: pointer;
+
+}
+
+.resume_button{
+    margin:0;
+    border:0;
+    padding: 0;
+    height: 50%;
+    background-color: transparent;
+    border: 1px solid black;
+    padding: 4px;
+    cursor: pointer;
+    border-radius: 20px 20px 20px 20px;
+
+}
+
+.header_button img{
+    height: 100%;
+    transition: border 0.4s ease 0.2s;
+}
+
+.header_button img:hover{
+    border: 1px solid red;
+    border-radius: 50%;
+}
+
+main{
+    height: 100vh;
+    display: flex;
+    align-items: stretch;
+}
+
+#sidebar{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    order:2;
+    max-height: max-content;
+}
+
+
+.connect{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.m_t{
+    height: 25%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+.m_t img, .m_t p{
+    padding-right: 4px;
+}
+
+.m_t img{
+    height: 100%;
+    width: 35%;
+
+}
+
+#logo_twitter{
+    max-height: 20px;
+    max-width: 25px;
+}
+
+#logo_medium{
+    max-height: 35px;
+    max-width: 35px;
+}
+
+.connect_p p{
+    font-size: 15px;
+    margin: 6px auto;
+}
+
+
+.connect_button{
+    width: 65%;
+    display: flex;
+    justify-content: center;
+}
+
+.twitter_button{
+    background-color: transparent;
+    border: 2px solid lightgray;
+    cursor: pointer;
+    border-radius: 25px 25px 25px 25px;
+    width: 75%;
+    padding: 6px;
+    margin: 7px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.twitter_button img{
+    padding-right: 3px;
+    padding-left: 12px;
+}
+
+.twitter_button span{
+    font-weight:500;
+}
+
+.connect :nth-child(4){
+    text-decoration: underline;
+    margin: 6px;
+    font-size: 14px;
+    color: grey;
+    cursor: pointer;
+}
+
+.connect :nth-child(4):hover{
+    color: lightcoral;
+}
+
+.conteiner_topics{
+    width: 100%;
+}
+
+.title_h3{
+    font-size: 13px;
+    padding-left: 15px;
+}
+
+.topics_list{
+    width: 70%;
+}
+
+.topics_list ul{
+    width: 75%;
+    padding-left: 15px;
+    gap: 10px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.topics_list ul li{
+    background-color: lightgray;
+    border-radius: 25px 25px 25px 25px;
+    padding: 6px;
+    font-size: 14px;
+    list-style: none;
+    cursor: pointer;
+}
+
+.topics_list ul li:hover{
+    background-color: lightblue;
+}
+
+
+.conteiner_who{
+    width: 100%;
+}
+
+.conteiner_profile{
+    padding-left: 15px;
+    margin-bottom: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start ;
+}
+
+.profile{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.profile_img{
+    width: 15%;
+}
+
+.profile_img img{
+    width: 40px;
+    cursor: pointer;
+    transition: border 0.4s ease 0.2s;
+}
+
+.profile_img img:hover{
+    border: 1px solid blue;
+    border-radius: 50%;
+}
+
+.profile_description{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile_description h3{
+    margin: 0;
+    padding-bottom: 5px;
+    font-size: 15px;
+}
+
+.profile_description p{
+    margin: 0;
+    font-size: 12px;
+}
+
+.profile_button{
+    width: 40%;
+}
+
+.profile_button button{
+    background-color: transparent;
+    border-radius: 25px 25px 25px 25px;
+    padding: 6px 13px;
+    cursor: pointer;
+}
+
+.profile_button button:hover{
+    text-decoration: underline;
+    background-color: lightgreen;
+}
+
+.conteiner_chatting{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.photo_chat{
+    padding-left: 15px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.photo_chat img{
+    width: 40px;
+    cursor: pointer;
+    transition: border 0.4s ease 0.2s;
+}
+
+.photo_chat img:hover{
+    border: 1px solid blue;
+    border-radius: 50%;
+}
+
+.photo_chat span{
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 4px;
+}
+
+.chat_h2{
+    padding-left: 15px;
+}
+
+.chat_h2 h2{
+    font-size: 15px;
+}
+
+.chat_time{
+    padding-left: 15px;
+}
+
+.chat_time p{
+    font-size: 13px;
+    color: lightgray;
+    margin: 0;
+}
+
+.chat_time p::after{
+    content: "\2605";
+    padding-left: 10px;
+}
+
+.chat_time_2{
+    padding-left: 15px;
+}
+
+.chat_time_2 p{ 
+    font-size: 13px;
+    color: lightgray;
+    margin: 0;
+}
+
+.chat_all{
+    font-size: 12px;
+    color: lightgreen;
+    cursor: pointer;
+    padding-left: 15px;
+}
+
+.chat_all p:hover{
+    font-weight: bold;
+    font-size: 13px;
+    color: green;
+}
+
+.list_about{
+    width: 100%;
+}
+
+
+.list_about ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 15px;
+    gap: 10px 45px;
+}
+
+.list_about li{
+    padding: 6px;
+    font-size: 14px;
+    list-style: none;
+    cursor: pointer;
+}
+
+.list_about li:hover{
+    color: red;
+}
+
+#article{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    order:1;
+    max-height: max-content;
+}
+
+.head_article{
+    display: flex;
+    width: 100%;
+    font-size: 15px;
+}
+
+.head_article p{
+    padding-left: 20px;
+    margin-top: 25px;
+    text-decoration: none;
+    cursor: pointer;
+    color: lightgray;
+    font-weight: normal;
+    
+}
+
+.head_article p:hover, .head_article p:focus{
+    color: black; 
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 5px;
+}
+
+.article_view{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.article_description{
+    width: 60%;
+}
+
+.p_article{
+    padding-left: 15px;
+    color: black;
+    font-size: 14px;
+}
+
+.info_article{
+    padding-left: 15px;
+    color: black;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 6px;
+}
+
+.contenitor_infoA{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.button_article button{
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.info_article a{
+    text-decoration: none;
+    color: black;
+}
+
+.info_article a:hover{
+    color: lightcoral;
+    text-decoration: underline;
+}
+
+.img_article{
+    width: 40%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.img_article img{
+    max-width: 55%;
+    max-height: 70%;
+}
